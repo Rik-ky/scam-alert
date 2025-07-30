@@ -1,0 +1,24 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scam Alert</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <section class="hero">
+    <div class="overlay"></div>
+    <img src="{{ url_for('static', filename='hero.png') }}" alt="Hero Crowd" class="hero-image">
+    <div class="hero-text">
+      <h1>Spot a Scammer. Save a Community.</h1>
+      <p>Report scammers and keep others safe. Together, we build trust.</p>
+      <div class="cta-buttons">
+        <a href="{{ url_for('report') }}" class="btn primary">Report a Scam</a>
+        <a href="{{ url_for('search') }}" class="btn secondary">Search Reports</a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

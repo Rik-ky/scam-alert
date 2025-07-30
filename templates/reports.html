@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="container py-5">
+  <h3 class="mb-4 text-center">Scammer Reports</h3>
+  {% if reports %}
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped">
+        <thead class="table-primary">
+          <tr>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for report in reports %}
+          <tr>
+            <td>{{ report.name }}</td>
+            <td>{{ report.phone }}</td>
+            <td>{{ report.description }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  {% else %}
+    <p class="text-center">No reports yet.</p>
+  {% endif %}
+</div>
+{% endblock %}

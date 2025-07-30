@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="hero">
+  <div class="hero-overlay">
+    <h1 class="mb-3">Scam Alert Platform</h1>
+    <p class="mb-4">Report and view scammer activity to protect your community.</p>
+    <a href="{{ url_for('report') }}" class="btn btn-warning btn-lg">Report a Scam</a>
+  </div>
+</div>
+{% endblock %}

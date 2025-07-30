@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block content %}
+<form method="POST">
+  <h2 style="text-align:center;">Search Scam Reports</h2>
+  <input type="text" name="query" placeholder="Search by name or phone" required>
+  <button type="submit">Search</button>
+</form>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="container py-5">
+  <h3 class="mb-4 text-center">Search Results</h3>
+  {% if results %}
+    <ul class="list-group">
+      {% for result in results %}
+      <li class="list-group-item">
+        <strong>{{ result.name }}</strong> - {{ result.phone }}<br>
+        {{ result.description }}
+      </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p class="text-center">No matches found.</p>
+  {% endif %}
+</div>
+{% endblock %}
