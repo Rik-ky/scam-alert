@@ -27,6 +27,17 @@ I created Scam Alert because:
 - **Database:** SQLite
 - **Authentication:** Secure password hashing, session management
 
+## 💡 Future Ideas
+
+- Add SMS verification
+- Geo-tagged scam reports
+- Community upvotes/downvotes on reports
+- Admin dashboard for moderation
+
+## 📜 License
+This project is open-source and free to use. Use it to protect your community, learn, and give back.
+
+
 ## 🛠 How to Run Locally
 
 1. Clone the repository:
@@ -62,17 +73,3 @@ I created Scam Alert because:
 6.Run the app:
    ```bash
      flask run
-
-💡 Future Ideas
-
-    Add SMS verification
-
-    Geo-tagged scam reports
-
-    Community upvotes/downvotes on reports
-
-    Admin dashboard for moderation
-
-📜 License
-
-This project is open-source and free to use. Use it to protect your community, learn, and give back.
