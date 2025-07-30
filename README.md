@@ -34,17 +34,34 @@ I created Scam Alert because:
    ```bash
    git clone https://github.com/Rik-ky/scam-alert.git
    cd scam-alert
-2. python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+2. Create a virtual environment and activate it:
+   
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   
+3. Install dependencies:
 
-3. pip install -r requirements.txt
+    ```bash
 
-4.MAIL_USERNAME=your_email@gmail.com
-MAIL_PASSWORD=your_app_password
+   pip install -r requirements.txt
 
-5. python init_db.py
+4. Configure your .env file with your email credentials:
 
-6. flask run
+    ```bash
+    MAIL_USERNAME=your_email@gmail.com
+   MAIL_PASSWORD=your_app_password
+   
+
+5. Initialize the database:
+   
+    ```bash
+    python init_db.py
+    
+
+6.Run the app:
+   ```bash
+     flask run
 
 💡 Future Ideas
 
