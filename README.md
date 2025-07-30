@@ -34,3 +34,28 @@ I created Scam Alert because:
    ```bash
    git clone https://github.com/Rik-ky/scam-alert.git
    cd scam-alert
+2. python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+3. pip install -r requirements.txt
+
+4.MAIL_USERNAME=your_email@gmail.com
+MAIL_PASSWORD=your_app_password
+
+5. python init_db.py
+
+6. flask run
+
+💡 Future Ideas
+
+    Add SMS verification
+
+    Geo-tagged scam reports
+
+    Community upvotes/downvotes on reports
+
+    Admin dashboard for moderation
+
+📜 License
+
+This project is open-source and free to use. Use it to protect your community, learn, and give back.
